@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Islamic Hub | Hajj, Umrah & Supplications</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Bismillah at the top of every page -->
+<div class="bismillah">
+    بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ<br>
+    <span style="font-size: 0.9rem;">In the name of Allah, the Most Gracious, the Most Merciful</span>
+</div>
+
+<!-- Standardized Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">🕋 Islamic Hub</a>
+    </div>
+    <div class="menu-toggle">☰</div>
+    <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+    
+       <!-- Hajj Dropdown -->
+       <li class="dropdown">
+          <a href="hajj/index.html">Hajj ▼</a>
+          <div class="dropdown-content">
+              <a href="hajj/index.html">📖 Overview</a>
+              <a href="hajj/basic.html">🌱 Basic Level</a>
+              <a href="hajj/intermediate.html">📚 Intermediate Level</a>
+              <a href="hajj/advanced.html">🏛️ Advanced Level</a>
+              <a href="hajj/quiz.html">📝 Quiz</a>
+          </div>
+       </li>
+    
+       <!-- Umrah Dropdown -->
+       <li class="dropdown">
+          <a href="umrah/index.html">Umrah ▼</a>
+          <div class="dropdown-content">
+              <a href="umrah/index.html">📖 Overview</a>
+              <a href="umrah/basic.html">🌱 Basic Level</a>
+              <a href="umrah/intermediate.html">📚 Intermediate Level</a>
+              <a href="umrah/advanced.html">🏛️ Advanced Level</a>
+              <a href="umrah/quiz.html">📝 Quiz</a>
+          </div>
+       </li>
+    
+       <!-- Du'as Dropdown -->
+       <li class="dropdown">
+         <a href="index.html">Du'as ▼</a>
+         <div class="dropdown-content">
+           <a href="index.html">📖 All Du'as (Master)</a>
+           <a href="protection.html">🛡️ Protection</a>
+           <a href="morning-evening.html">🌅 Morning & Evening</a>
+           <a href="rabbana-40.html">📖 40 Rabbana Duas</a>
+           <a href="after-salah.html">🕌 After Salah</a>
+           <a href="family.html">🏠 Family & Children</a>
+           <a href="health.html">🩺 Health & Healing</a>
+           <a href="distress.html">😢 Grief & Distress</a>
+           <a href="hajj-umrah.html">🕋 Hajj & Umrah Du'as</a>
+           <a href="funeral.html">🕊️ Funeral Du'as</a>
+         </div>
+       </li>
+    
+       <!-- Fiqh Dropdown -->
+       <li class="dropdown">
+          <a href="fiqh/index.html">Fiqh ▼</a>
+          <div class="dropdown-content">
+             <a href="fiqh/index.html">📖 Overview</a>
+             <a href="fiqh/basic.html">🌱 Basic Rulings</a>
+             <a href="fiqh/intermediate.html">📚 Intermediate</a>
+             <a href="fiqh/advanced.html">🏛️ Advanced Fiqh</a>
+          </div>
+       </li>
+    
+       <li><a href="glossary.html">Glossary</a></li>
+       <li><a href="references.html">References</a></li>
+    </ul>
+
+</nav>
+
+<main class="container">
+    
+    <h1>Welcome to the Islamic Hub</h1>
+    
+    <!-- Quranic Verse -->
+    <div class="quran-box">
+        "And proclaim to the people the Hajj [pilgrimage]; they will come to you on foot and on every lean camel; they will come from every distant pass."<br>
+        <p>— Surah Al-Hajj 22:27</p>
+    </div>
+    
+    <p style="font-size: 1.2rem; text-align: center; margin-bottom: 2rem;">
+        A complete, authentic, and modular resource for Hajj, Umrah, daily supplications, and Islamic rulings.
+    </p>
+    
+    <!-- Quick Links Cards -->
+    <div class="card-grid">
+        <div class="card">
+            <h3>🕋 Hajj Guide</h3>
+            <p>Step-by-step guide, pillars, obligations, common mistakes, and women-specific rulings.</p>
+            <a href="hajj/index.html">Explore Hajj →</a>
+        </div>
+        
+        <div class="card">
+            <h3>🕌 Umrah Guide</h3>
+            <p>Complete guide to performing Umrah, from Ihram to Tawaf to Sa'i.</p>
+            <a href="umrah/index.html">Explore Umrah →</a>
+        </div>
+        
+        <div class="card">
+            <h3>🤲 Daily Du'as</h3>
+            <p>Searchable, categorized supplications for all occasions: health, wealth, protection, family, and more.</p>
+            <a href="dua/index.html">Explore Du'as →</a>
+        </div>
+        
+        <div class="card">
+            <h3>📖 Fiqh & Rulings</h3>
+            <p>Authentic rulings on conditions of Hajj, sacrifice, elderly & sick, and more.</p>
+            <a href="fiqh/index.html">Explore Rulings →</a>
+        </div>
+        
+        <div class="card">
+            <h3>📚 Glossary</h3>
+            <p>Definitions of Islamic terms related to Hajj, Umrah, and worship.</p>
+            <a href="glossary.html">View Glossary →</a>
+        </div>
+        
+        <div class="card">
+            <h3>🔗 References</h3>
+            <p>All sources: PDFs, scholars, books, and online resources.</p>
+            <a href="references.html">View References →</a>
+        </div>
+    </div>
+    
+    <!-- Hadith Section -->
+    <div style="background: #E2DDD3; padding: 1.5rem; border-radius: 12px; margin-top: 2rem;">
+        <h3 style="color: #1F4A3A;">📜 Hadith on Hajj</h3>
+        <p>The Prophet (ﷺ) said: <em>"Whoever performs Hajj for the sake of Allah and does not commit any obscenity or transgression will return (free from sin) as the day his mother bore him."</em></p>
+        <p style="margin-top: 0.5rem;">— Sahih al-Bukhari, Sahih Muslim</p>
+    </div>
+    
+</main>
+
+<!-- Standardized Footer -->
+<footer class="footer">
+    <p>🕋 Islamic Hub — Hajj, Umrah & Supplications</p>
+    <p>Built with 📚 authentic sources | Dar al-Iftaa al-Misriyyah, Ibn Kathir, Sahih Hadith</p>
+    <p>🤲 May Allah accept our efforts — <a href="references.html">References</a></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

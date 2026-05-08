@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Hajj Quiz | Islamic Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Bismillah -->
+<div class="bismillah">
+<div class="global-floral-top" style="text-align: center; font-size: 2.2rem; color: #D4A373; margin: 0.5rem 0;">🌸 ✿ 🌻 ❀ 🌺 ✾ 🌼 ✻ 🌸</div>
+    بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ<br>
+    <span style="font-size: 0.9rem;">In the name of Allah, the Most Gracious, the Most Merciful</span>
+</div>
+
+<!-- Navigation with Dropdowns -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="../index.html">🕋 Islamic Hub</a>
+    </div>
+    <div class="menu-toggle">☰</div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        
+        <!-- Hajj Dropdown -->
+        <li class="dropdown">
+            <a href="index.html">Hajj ▼</a>
+            <div class="dropdown-content">
+                <a href="index.html">📖 Overview</a>
+                <a href="basic.html">🌱 Basic Level</a>
+                <a href="intermediate.html">📚 Intermediate Level</a>
+                <a href="advanced.html">🏛️ Advanced Level</a>
+                <a href="quiz.html">📝 Quiz</a>
+                <a href="debt-guide.html">💰 Hajj & Debt Guide</a>
+            </div>
+        </li>
+        
+        <!-- Umrah Dropdown -->
+        <li class="dropdown">
+            <a href="../umrah/index.html">Umrah ▼</a>
+            <div class="dropdown-content">
+                <a href="../umrah/index.html">📖 Overview</a>
+                <a href="../umrah/basic.html">🌱 Basic Level</a>
+                <a href="../umrah/intermediate.html">📚 Intermediate Level</a>
+                <a href="../umrah/advanced.html">🏛️ Advanced Level</a>
+                <a href="../umrah/quiz.html">📝 Quiz</a>
+            </div>
+        </li>
+        
+        <!-- Du'as Dropdown -->
+        <li class="dropdown">
+            <a href="../dua/index.html">Du'as ▼</a>
+            <div class="dropdown-content">
+                <a href="../dua/index.html">📖 All Du'as (Master)</a>
+                <a href="../dua/protection.html">🛡️ Protection</a>
+                <a href="../dua/morning-evening.html">🌅 Morning & Evening</a>
+                <a href="../dua/rabbana-40.html">📖 40 Rabbana Duas</a>
+                <a href="../dua/after-salah.html">🕌 After Salah</a>
+                <a href="../dua/family.html">🏠 Family & Children</a>
+                <a href="../dua/health.html">🩺 Health & Healing</a>
+                <a href="../dua/distress.html">😢 Grief & Distress</a>
+                <a href="../dua/hajj-umrah.html">🕋 Hajj & Umrah Du'as</a>
+                <a href="../dua/funeral.html">🕊️ Funeral Du'as</a>
+            </div>
+        </li>
+        
+        <!-- Fiqh Dropdown -->
+        <li class="dropdown">
+            <a href="../fiqh/index.html">Fiqh ▼</a>
+            <div class="dropdown-content">
+                <a href="../fiqh/index.html">📖 Overview</a>
+                <a href="../fiqh/basic.html">🌱 Basic Rulings</a>
+                <a href="../fiqh/intermediate.html">📚 Intermediate</a>
+                <a href="../fiqh/advanced.html">🏛️ Advanced Fiqh</a>
+            </div>
+        </li>
+        
+        <li><a href="../glossary.html">Glossary</a></li>
+        <li><a href="../references.html">References</a></li>
+        <li><a href="../about.html">About</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    
+    <div style="background: #D4A373; color: #1F4A3A; padding: 0.5rem 1rem; border-radius: 8px; display: inline-block; margin-bottom: 1rem;">
+        📝 Test Your Knowledge — Hajj (Basic to Advanced)
+    </div>
+    
+    <h1>🕋 Hajj Knowledge Quiz</h1>
+    
+    <div class="quran-box">
+        "Are those who know equal to those who do not know?"<br>
+        <p>— Surah Az-Zumar 39:9</p>
+    </div>
+    
+    <p style="margin-bottom: 2rem;">Test your understanding of Hajj — from basic obligations to advanced fiqh and spiritual meanings. Answer 26 questions and receive instant feedback with references.</p>
+    
+    <!-- Quiz Container -->
+    <div id="quizContainer" class="quiz-container"></div>
+    <div id="resultsContainer"></div>
+    
+</main>
+
+<footer class="footer">
+    <p>🕋 Islamic Hub — Hajj, Umrah & Supplications</p>
+    <p>📚 Sources: Dar al-Iftaa al-Misriyyah, Sahih al-Bukhari, Sahih Muslim, Fiqh us Sunnah</p>
+    <p>🤲 May Allah accept our efforts — <a href="../references.html">References</a></p>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/quiz.js"></script>
+
+<script>
+// Hajj Quiz Questions
+const hajjQuestions = [
+    // BASIC LEVEL (Questions 1-8)
+    {
+        text: "Which pillar of Islam is Hajj?",
+        options: ["Second pillar", "Third pillar", "Fourth pillar", "Fifth pillar"],
+        correct: 3,
+        explanation: "Hajj is the fifth pillar of Islam, after Shahada (faith), Salah (prayer), Zakat (charity), and Sawm (fasting).",
+        hint: "Think of the order: 1. Shahada, 2. Salah, 3. Zakat, 4. Sawm, 5. ?"
+    },
+    {
+        text: "How many times is Hajj obligatory in a lifetime?",
+        options: ["Every year", "Every 5 years", "Once in a lifetime", "Twice in a lifetime"],
+        correct: 2,
+        explanation: "Hajj is obligatory once for every Muslim who is physically and financially able. Extra times are voluntary (nafl).",
+        hint: "The Prophet (ﷺ) said: 'Hajj is once, and more is voluntary.'"
+    },
+    {
+        text: "In which month of the Islamic calendar is Hajj performed?",
+        options: ["Ramadan", "Muharram", "Dhul-Hijjah", "Rajab"],
+        correct: 2,
+        explanation: "Hajj is performed in the month of Dhul-Hijjah, specifically from the 8th to the 12th or 13th.",
+        hint: "The month of the 'Festival of Sacrifice' (Eid al-Adha)."
+    },
+    {
+        text: "What is the state of purity and consecration for Hajj called?",
+        options: ["Tawaf", "Sa'i", "Ihram", "Wuquf"],
+        correct: 2,
+        explanation: "Ihram is the sacred state where pilgrims wear special garments (two white sheets for men, modest dress for women) and refrain from prohibited acts.",
+        hint: "It begins at the Miqat and involves special clothing and rules."
+    },
+    {
+        text: "What is the Talbiyah?",
+        options: ["The call to prayer (Adhan)", "The prayer after Tawaf", "The pilgrim's response to Allah's call", "The du'a for stoning"],
+        correct: 2,
+        explanation: "Talbiyah is 'Labbaik Allahumma Labbaik' — the pilgrim's answer to Allah's command to perform Hajj, recited frequently from Ihram until stoning.",
+        hint: "It begins with 'Labbaik' meaning 'Here I am, O Allah'."
+    },
+    {
+        text: "What does 'Wuquf' mean in Hajj?",
+        options: ["Walking between Safa and Marwah", "Standing in prayer and supplication", "Circling the Kaaba", "Stoning the pillars"],
+        correct: 1,
+        explanation: "Wuquf means 'to stand' — pilgrims stand at Arafah from noon until sunset making du'a and seeking forgiveness.",
+        hint: "From the Arabic root 'waqafa' meaning to stop/stand."
+    },
+    {
+        text: "Which day of Hajj is known as the 'Day of Arafah'?",
+        options: ["8th Dhul-Hijjah", "9th Dhul-Hijjah", "10th Dhul-Hijjah", "11th Dhul-Hijjah"],
+        correct: 1,
+        explanation: "The 9th of Dhul-Hijjah is the Day of Arafah — the most important day of Hajj. The Prophet (ﷺ) said: 'Hajj is Arafah.'",
+        hint: "The day when pilgrims stand on the plain of Arafah."
+    },
+    {
+        text: "What does Sa'i commemorate?",
+        options: ["Ibrahim's sacrifice", "Hagar's search for water", "Muhammad's migration", "The conquest of Makkah"],
+        correct: 1,
+        explanation: "Sa'i between Safa and Marwah commemorates Hagar running seven times searching for water for her son Isma'il.",
+        hint: "The mother of Isma'il — she ran between two hills."
+    },
+    
+    // INTERMEDIATE LEVEL (Questions 9-16)
+    {
+        text: "What is the most important day of Hajj, described by the Prophet (ﷺ) as 'Hajj is ___'?",
+        options: ["The day of Nahr (10th)", "The day of Tarwiyah (8th)", "The day of Arafah (9th)", "The days of Tashreeq (11th-13th)"],
+        correct: 2,
+        explanation: "The Prophet (ﷺ) said: 'Hajj is Arafah.' (Tirmidhi, Nasai) — Wuquf at Arafah is the essence of Hajj.",
+        hint: "The day when pilgrims stand and make du'a from noon until sunset."
+    },
+    {
+        text: "Which type of Hajj involves performing Umrah first, exiting Ihram, then entering Ihram again for Hajj?",
+        options: ["Hajj al-Ifrad", "Hajj al-Tamattu'", "Hajj al-Qiran", "Hajj al-Wada"],
+        correct: 1,
+        explanation: "Tamattu' is the most common form. The Prophet (ﷺ) commanded it for those not bringing sacrificial animals.",
+        hint: "It means 'to enjoy' — you enjoy a break between Umrah and Hajj."
+    },
+    {
+        text: "What is the ruling if a pilgrim misses the Farewell Tawaf (Tawaf al-Wada)?",
+        options: ["Hajj is invalid", "Must return to Makkah immediately", "Sacrifice (dam) is required", "Nothing — it is only Sunnah"],
+        correct: 2,
+        explanation: "According to Hanafi and Hanbali schools, a sacrifice (dam) is required. The Farewell Tawaf is wajib (obligatory).",
+        hint: "It's not a pillar, but it is obligatory. If missed, an animal must be sacrificed."
+    },
+    {
+        text: "How many circuits (rounds) are there in Tawaf?",
+        options: ["3", "5", "7", "10"],
+        correct: 2,
+        explanation: "Tawaf consists of 7 circuits around the Kaaba, starting and ending at the Black Stone.",
+        hint: "The number is the same as the seven heavens and seven earths."
+    },
+    {
+        text: "What do pilgrims collect in Muzdalifah?",
+        options: ["Water from Zamzam", "Pebbles for stoning", "Prayer beads", "Dates and raisins"],
+        correct: 1,
+        explanation: "Pilgrims collect 49 or 70 small pebbles in Muzdalifah to stone the Jamarat (pillars) in Mina.",
+        hint: "Used for 'Rami' — the stoning ritual."
+    },
+    {
+        text: "How many Jamarat (pillars) are stoned during the Days of Tashreeq?",
+        options: ["1", "2", "3", "4"],
+        correct: 2,
+        explanation: "There are three Jamarat: Small (Jamarah al-Sughra), Middle (Jamarah al-Wusta), and Large (Jamarah al-Aqabah).",
+        hint: "They represent the locations where Shaytan appeared to Prophet Ibrahim."
+    },
+    {
+        text: "What is the significance of stoning the Jamarat?",
+        options: ["Honoring Ibrahim's sacrifice", "Rejecting Shaytan's whispers", "Commemorating Hajar's struggle", "Cleansing from sins"],
+        correct: 1,
+        explanation: "Stoning represents rejecting Shaytan's temptations, following Ibrahim who threw stones at Shaytan when he tried to stop him from sacrificing Isma'il.",
+        hint: "It is a symbolic declaration: 'I follow Allah, not my ego or Shaytan.'"
+    },
+    {
+        text: "What does 'Halq' refer to in Hajj?",
+        options: ["Stoning the pillars", "Shaving the head", "Sacrificing an animal", "Running between Safa and Marwah"],
+        correct: 1,
+        explanation: "Halq means shaving the head completely (for men) after completing Hajj. Taqsir means trimming. Shaving is preferred.",
+        hint: "It is the final act before leaving the state of Ihram."
+    },
+    
+    // ADVANCED LEVEL (Questions 17-25)
+    {
+        text: "In Hajj al-Tamattu', what is required if a pilgrim cannot afford or find a sacrificial animal?",
+        options: ["Hajj becomes invalid", "Fast 10 days (3 during Hajj, 7 after)", "Pay a monetary fine", "Nothing — it is waived"],
+        correct: 1,
+        explanation: "Allah says in Surah Al-Baqarah 2:196: '...if you cannot find (an animal), then fast three days during Hajj and seven when you return home.'",
+        hint: "The Qur'an provides an alternative — fasting instead of sacrifice."
+    },
+    {
+        text: "According to the Hanafi school, what is the ruling for stoning on the 10th of Dhul-Hijjah?",
+        options: ["After sunrise", "From Fajr until sunset", "Only between Dhuhr and Asr", "Any time during the day"],
+        correct: 0,
+        explanation: "The Hanafi school holds that stoning on the 10th must be after sunrise. Other schools allow from Fajr or earlier.",
+        hint: "Different madhhabs have slightly different timings."
+    },
+    {
+        text: "Which of the following is PROHIBITED (muharramat) while in Ihram?",
+        options: ["Using unscented soap", "Covering the head for men", "Wearing sandals", "Taking a shower"],
+        correct: 1,
+        explanation: "Men may not cover their head or wear sewn garments. Women may not cover their face (niqab) or wear gloves.",
+        hint: "Anything that involves adornment, covering the head, or using scents."
+    },
+    {
+        text: "What is the ruling if a pilgrim dies during Hajj?",
+        options: ["Hajj is invalid", "They are considered a martyr (shahid)", "The body must be washed and shrouded normally", "The family must repeat Hajj on their behalf"],
+        correct: 1,
+        explanation: "The Prophet (ﷺ) said: 'Whoever dies during Hajj, neither will they be resurrected nor accounted (for that journey's sin).' They are martyrs and buried in Ihram.",
+        hint: "They remain in their Ihram garments without washing."
+    },
+    {
+        text: "According to prophecies, what will happen to the Kaaba before the Hour?",
+        options: ["It will expand", "It will be destroyed by a man from Abyssinia", "It will move to Jerusalem", "It will be covered in gold"],
+        correct: 1,
+        explanation: "The Prophet (ﷺ) said: 'The Kaaba will be destroyed by a thin-legged man from Abyssinia (Ethiopia).' (Ahmad, Ibn Hibban)",
+        hint: "An eschatological prophecy about the end times."
+    },
+    {
+        text: "Can a woman perform Hajj without a mahram according to the majority of scholars?",
+        options: ["Yes, with a trusted group of women", "No, never", "Yes, if she is over 50", "Yes, if she is financially independent"],
+        correct: 1,
+        explanation: "The Prophet (ﷺ) said: 'A woman should not travel except with a mahram.' (Bukhari) The majority require a mahram.",
+        hint: "The general ruling is 'no' — though some modern scholars have exceptions."
+    },
+    {
+        text: "What does the two white sheets of Ihram symbolize?",
+        options: ["Wealth and poverty", "Life and death", "The shroud (death preparation)", "Day and night"],
+        correct: 2,
+        explanation: "The two white sheets resemble the shroud (kafan), reminding the pilgrim of death and their return to Allah.",
+        hint: "What do you bury a person in?"
+    },
+    {
+        text: "Which of the following is PERMITTED while in Ihram?",
+        options: ["Using perfume", "Wearing stitched clothing (men)", "Covering the head (men)", "Taking a shower with unscented soap"],
+        correct: 3,
+        explanation: "Bathing with unscented soap and water is permitted. Perfume, stitched clothing, and covering the head are prohibited.",
+        hint: "Cleanliness without adornment or fragrance."
+    },
+    {
+        text: "What is the spiritual purpose of Tawaf?",
+        options: ["Physical exercise", "Touring Makkah", "The heart circumambulating Allah", "Collecting rewards"],
+        correct: 2,
+        explanation: "Just as the body circles the Kaaba, the heart should circle Allah alone — free from love of dunya (world), fame, and false gods.",
+        hint: "It's about tawheed (monotheism) and devotion."
+    },
+    {
+        text: "What did the Prophet (ﷺ) say about performing Hajj with sincerity?",
+        options: ["It doubles your wealth", "You return free from sin like a newborn", "You become a scholar", "You receive 1000 rewards"],
+        correct: 1,
+        explanation: "The Prophet (ﷺ) said: 'Whoever performs Hajj for Allah and does not commit any obscenity or transgression will return like the day his mother bore him.' — completely free of sin.",
+        hint: "Like a newborn baby — sinless."
+    }
+];
+
+
+// Initialize quiz when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    const quiz = new QuizEngine(hajjQuestions, 'quizContainer', 'resultsContainer');
+    quiz.start();
+});
+</script>
+
+<script src="js/flowers.js"></script>
+</body>
+</html>

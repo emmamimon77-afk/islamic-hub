@@ -1,0 +1,625 @@
+/* Bismillahir Rahmanir Rahim */
+/* Islamic Hub - Hajj, Umrah & Supplications */
+/* Color Palette: Soft Sand & Sacred Green */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9F6F0;
+    color: #2E2E2E;
+    line-height: 1.6;
+}
+
+/* Import Premium Arabic Fonts - Quran.com Style */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Quran & Dua Arabic Text Styling */
+.dua-arabic, .quran-arabic, .arabic-text {
+    font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', 'Times New Roman', serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: right;
+    direction: rtl;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #1F4A3A;
+    margin-bottom: 0.75rem;
+    word-spacing: normal;
+}
+
+/* For longer verses (Ayatul Kursi, etc.) */
+.arabic-long {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+/* Source Badge */
+.source-badge {
+    display: inline-block;
+    background: #D4A373;
+    color: #1F4A3A;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+/* Dua Card - Clean, Spacious */
+.dua-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #E2DDD3;
+    transition: all 0.2s ease;
+}
+
+.dua-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    border-color: #D4A373;
+}
+
+/* Meaning Text */
+.meaning-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2E2E2E;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #E2DDD3;
+}
+
+/* Explanation/Tafsir Text */
+.explanation-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #5A5A5A;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+/* Modern Readable Arabic Font - Scheherazade New */
+.arabic-scheherazade {
+    font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    word-spacing: 0.03em;
+}
+.dua-arabic {
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
+
+/* ========== BISMILLAH BANNER ========== */
+.bismillah {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #1F4A3A 0%, #2C5F2D 100%);
+    color: #D4A373;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #D4A373;
+}
+
+/* ========== NAVIGATION ========== */
+.navbar {
+    background-color: #1F4A3A;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo a {
+    color: #D4A373;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Amiri', 'Segoe UI', serif;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #D4A373;
+    color: #1F4A3A;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ========== MAIN CONTENT ========== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: #2C5F2D;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #D4A373;
+    padding-left: 1rem;
+}
+
+h2 {
+    color: #1F4A3A;
+    margin: 1.5rem 0 1rem 0;
+}
+
+h3 {
+    color: #2C5F2D;
+    margin: 1rem 0;
+}
+
+/* ========== CARDS & SECTIONS ========== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+    border: 1px solid #E2DDD3;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #2C5F2D;
+    margin-bottom: 0.75rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: #1F4A3A;
+    font-weight: bold;
+}
+
+/* ========== QURANIC VERSE BOX ========== */
+.quran-box {
+    background: linear-gradient(135deg, #2C5F2D 0%, #1F4A3A 100%);
+    color: #D4A373;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-family: 'Amiri', serif;
+}
+
+.quran-box p {
+    font-size: 1.1rem;
+    color: #F9F6F0;
+    margin-top: 0.5rem;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background-color: #1F4A3A;
+    color: #E2DDD3;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 3px solid #D4A373;
+}
+
+.footer a {
+    color: #D4A373;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .bismillah {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quran-box {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+/* Quiz Styles */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quiz-progress {
+    background: #E2DDD3;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 0 1rem;
+    }
+}
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1F4A3A;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white !important;
+    padding: 0.75rem 1rem;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #2C5F2D;
+}
+
+.dropdown-content a:hover {
+    background-color: #D4A373;
+    color: #1F4A3A !important;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: #2C5F2D;
+        margin-top: 0.5rem;
+    }
+    
+    .dropdown-content a {
+        padding: 0.5rem 1rem 0.5rem 2rem;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+}
+
+/* Du'a Box Styles - Clean & Readable */
+.dua-box {
+    background: #E8F4F8;  /* Soft turquoise background */
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+    border-right: 4px solid #1F4A3A;
+    border-left: 4px solid #1F4A3A;
+}
+
+.dua-arabic {
+    font-size: 1.4rem;
+    font-family: 'Amiri', 'Times New Roman', serif;
+    line-height: 1.8;
+    text-align: right;
+    background: #FFFFFF;
+    color: #000000;  /* Black text for visibility */
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    direction: rtl;
+    font-weight: 500;
+}
+
+.dua-transliteration {
+    background: #D4E8E8;
+    color: #000000;  /* Black text */
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin: 0.75rem 0;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.dua-translation {
+    background: #1F4A3A;
+    color: #F9F6F0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin: 0.75rem 0;
+}
+
+.hadith-box {
+    background: #2C5F2D;
+    color: #F9F6F0;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border-left: 5px solid #D4A373;
+}
+
+.hadith-box strong {
+    color: #D4A373;
+}
+
+.separator {
+    height: 2px;
+    background: #1F4A3A;
+    margin: 0.75rem 0;
+    opacity: 0.3;
+}
+
+.dua-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #1F4A3A;
+    color: #D4A373;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+/* Quranic Verse Box - Turquoise Theme */
+.quran-box {
+    background: #E8F4F8;
+    color: #000000;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-family: 'Amiri', serif;
+    border: 1px solid #1F4A3A;
+}
+
+.quran-box p {
+    font-size: 1rem;
+    color: #1F4A3A;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+/* ============================================ */
+/* TURQUOISE THEME FOR MORNING & EVENING PAGE   */
+/* ============================================ */
+
+.turquoise-card {
+    background: #E8F4F8;
+    border-left: 8px solid #1F4A3A;
+    color: #1F4A3A;
+}
+
+.turquoise-card .dua-arabic {
+    color: #1F4A3A;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.turquoise-card .meaning-text {
+    color: #2E2E2E;
+    border-top-color: #D4A373;
+}
+
+.turquoise-card .explanation-text {
+    color: #3A5A40;
+}
+
+/* Alternative Arabic Font - More Traditional (Uthmani Script Style) */
+.arabic-traditional {
+    font-family: 'Traditional Arabic', 'Scheherazade New', 'Amiri', 'Times New Roman', serif;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    word-spacing: 0.05em;
+}
+
+/* Turquoise Quran Box */
+.quran-box-turquoise {
+    background: #E8F4F8;
+    color: #1F4A3A;
+    border: 2px solid #1F4A3A;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.quran-box-turquoise .dua-arabic {
+    color: #1F4A3A;
+    font-size: 1.6rem;
+}
+
+/* Different spacing for traditional font */
+.arabic-traditional-long {
+    font-family: 'Traditional Arabic', 'Scheherazade New', 'Amiri', serif;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+/* CRITICAL: Prevent Arabic text from breaking incorrectly */
+.arabic-fixed,
+.dua-arabic,
+.arabic-scheherazade,
+.arabic-text {
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    display: inline-block;
+    max-width: 100%;
+    text-align: right;
+    direction: rtl;
+    font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+/* For very long verses, allow wrap ONLY on spaces (which shouldn't exist inside words) */
+.arabic-long {
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+/* On mobile, allow horizontal scroll instead of breaking */
+@media (max-width: 640px) {
+    .arabic-fixed, .dua-arabic {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .arabic-long {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+}
+/* Google Translate Widget */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+.goog-te-gadget {
+    font-size: 0.8rem !important;
+    color: #D4A373 !important;
+}
+.goog-te-gadget a {
+    color: #D4A373 !important;
+}
+.goog-te-gadget .goog-te-combo {
+    background: #1F4A3A;
+    color: #D4A373;
+    border: 1px solid #D4A373;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+body {
+    top: 0 !important;
+}
+/* Force right-alignment for all Arabic text in Du'a pages */
+.dua-card .arabic-text,
+.dua-card .arabic-verse,
+.verse-card .arabic-verse,
+.dua-box .arabic-verse {
+    text-align: right !important;
+    direction: rtl !important;
+    font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif !important;
+    display: block;
+    width: 100%;
+}
+/* Homepage floral border */
+.homepage-floral-border {
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent,
+        transparent 20px,
+        #D4A373 20px,
+        #D4A373 22px,
+        transparent 22px,
+        transparent 40px
+    );
+    background-position: top;
+    background-repeat: repeat-x;
+    padding-top: 0.5rem;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>99 Names of Allah | Asma ul-Husna | Islamic Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Page-specific styles */
+        .basmala-header {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .basmala-arabic {
+            font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+            font-size: 2.2rem;
+            line-height: 3rem;
+            text-align: center;
+            direction: rtl;
+            color: #1F4A3A;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .title-arabic {
+            font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+            font-size: 1.6rem;
+            text-align: center;
+            direction: rtl;
+            color: #D4A373;
+            margin-top: 0.5rem;
+        }
+        .name-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border: 1px solid #E2DDD3;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .name-card:hover {
+            border-color: #D4A373;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .name-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .name-number {
+            font-weight: bold;
+            color: #D4A373;
+            min-width: 45px;
+            font-size: 1rem;
+            text-align: left;
+        }
+        .name-arabic {
+            font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+            font-size: 1.6rem;
+            text-align: right;
+            direction: rtl;
+            color: #1F4A3A;
+            flex: 3;
+            min-width: 180px;
+            margin-left: auto;
+        }
+        .name-meaning {
+            flex: 2;
+            color: #2E2E2E;
+            font-size: 1rem;
+            text-align: left;
+            min-width: 140px;
+        }
+        .toggle-icon {
+            font-size: 1.4rem;
+            color: #D4A373;
+            cursor: pointer;
+            min-width: 40px;
+            text-align: center;
+        }
+        .toggle-icon:hover {
+            transform: scale(1.1);
+        }
+        .quran-box-hidden {
+            display: none;
+            background: #E8F4F8;
+            padding: 1rem;
+            margin-top: 0.75rem;
+            border-radius: 12px;
+            border-left: 4px solid #1F4A3A;
+        }
+        .quran-box-hidden.show {
+            display: block;
+        }
+        .quran-arabic {
+            font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            text-align: right;
+            direction: rtl;
+            color: #1F4A3A;
+            margin-bottom: 0.5rem;
+        }
+        .verse-reference {
+            font-size: 0.8rem;
+            color: #6B6B6B;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+        @media (max-width: 640px) {
+            .basmala-arabic {
+               font-size: 1.6rem;
+               line-height: 2.2rem;
+            }
+            .title-arabic {
+               font-size: 1.2rem;
+            }
+            .name-row {
+               flex-wrap: wrap;
+            }
+            .name-arabic {
+               font-size: 1.3rem;
+               flex-basis: 100%;
+               text-align: right;
+               margin-bottom: 0.25rem;
+            }
+            .name-meaning {
+               flex-basis: 60%;
+               font-size: 0.9rem;
+            }
+        }
+    </style>
+        
+</head>
+<body>
+
+<div class="bismillah">
+    بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ<br>
+    <span style="font-size: 0.9rem;">In the name of Allah, the Most Gracious, the Most Merciful</span>
+</div>
+
+<nav class="navbar">
+    <div class="logo"><a href="index.html">🕋 Islamic Hub</a></div>
+    <div class="menu-toggle">☰</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown"><a href="hajj/index.html">Hajj ▼</a>
+            <div class="dropdown-content">
+                <a href="hajj/index.html">📖 Overview</a>
+                <a href="hajj/basic.html">🌱 Basic Level</a>
+                <a href="hajj/intermediate.html">📚 Intermediate Level</a>
+                <a href="hajj/advanced.html">🏛️ Advanced Level</a>
+                <a href="hajj/quiz.html">📝 Quiz</a>
+                <a href="hajj/debt-guide.html">💰 Hajj & Debt Guide</a>
+            </div>
+        </li>
+        <li class="dropdown"><a href="umrah/index.html">Umrah ▼</a>
+            <div class="dropdown-content">
+                <a href="umrah/index.html">📖 Overview</a>
+                <a href="umrah/basic.html">🌱 Basic Level</a>
+                <a href="umrah/intermediate.html">📚 Intermediate Level</a>
+                <a href="umrah/advanced.html">🏛️ Advanced Level</a>
+                <a href="umrah/quiz.html">📝 Quiz</a>
+            </div>
+        </li>
+        <li class="dropdown"><a href="dua/index.html">Du'as ▼</a>
+            <div class="dropdown-content">
+                <a href="dua/index.html">📖 All Du'as</a>
+                <a href="dua/protection.html">🛡️ Protection</a>
+                <a href="dua/morning-evening.html">🌅 Morning & Evening</a>
+                <a href="dua/rabbana-40.html">📖 40 Rabbana Duas</a>
+                <a href="dua/after-salah.html">🕌 After Salah</a>
+                <a href="dua/family.html">🏠 Family & Children</a>
+                <a href="dua/health.html">🩺 Health & Healing</a>
+                <a href="dua/distress.html">😢 Grief & Distress</a>
+                <a href="dua/hajj-umrah.html">🕋 Hajj & Umrah Du'as</a>
+                <a href="dua/funeral.html">🕊️ Funeral Du'as</a>
+            </div>
+        </li>
+        <li class="dropdown"><a href="fiqh/index.html">Fiqh ▼</a>
+            <div class="dropdown-content">
+                <a href="fiqh/index.html">📖 Overview</a>
+                <a href="fiqh/basic.html">🌱 Basic Rulings</a>
+                <a href="fiqh/intermediate.html">📚 Intermediate</a>
+                <a href="fiqh/advanced.html">🏛️ Advanced Fiqh</a>
+            </div>
+        </li>
+        <li><a href="asmaul-husna.html">99 Names</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <div class="basmala-header">
+            <div class="basmala-arabic">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+            <div class="title-arabic">أَسْمَاءُ ٱللَّٰهِ ٱلْحُسْنَىٰ</div>
+        </div>
+        <h1>99 Names of Allah</h1>
+        <div class="quran-box" style="margin-top: 1rem; padding: 1rem;">
+            <div class="quran-arabic" style="font-size: 1.3rem;">
+                وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا
+            </div>
+            <p>"And to Allah belong the best names, so invoke Him by them." — Surah Al-A'raf (7:180)</p>
+        </div>
+        <p style="margin-top: 1rem;">Click the 📖 icon to reveal the Quranic verse for each name.</p>
+    </div>
+
+    <div id="namesContainer">
+        <!-- Names will be dynamically inserted here for easier maintenance -->
+    </div>
+
+    <div style="background: #1F4A3A; color: white; padding: 1.5rem; border-radius: 16px; text-align: center; margin: 2rem 0;">
+        <h3 style="color: #D4A373;">🤲 A Reminder</h3>
+        <p>The Prophet (ﷺ) said: "Allah has ninety-nine names. Whoever memorizes them and acts upon them will enter Paradise." (Sahih al-Bukhari)</p>
+        <p style="margin-top: 1rem;">May Allah make us among those who know Him by His beautiful names and call upon Him with them. Ameen.</p>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>🕋 Islamic Hub — Hajj, Umrah & Supplications</p>
+    <p>📚 Sources: Quran (Madinah Mushaf), Sahih al-Bukhari, Sahih Muslim</p>
+    <p>🤲 <em>And Allah knows best</em> — <a href="references.html">References</a></p>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #D4A373;">
+        <div id="google_translate_element" style="text-align: center;"></div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    // Complete dataset of 99 Names with Quranic evidence
+    const namesData = [
+        { num: 1, arabic: "الرَّحْمَـٰنُ", meaning: "The Beneficent", surah: "Al-A'raf (7:180)", verse: "وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا", translation: "And to Allah belong the best names, so invoke Him by them." },
+        { num: 2, arabic: "الرَّحِيمُ", meaning: "The Merciful", surah: "Al-Baqarah (2:163)", verse: "وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ ۖ لَّا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ", translation: "And your god is one God. There is no deity worthy of worship except Him, the Beneficent, the Merciful." },
+        { num: 3, arabic: "الْمَلِكُ", meaning: "The Sovereign", surah: "Al-Hashr (59:23)", verse: "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ", translation: "He is Allah, other than whom there is no deity, the Sovereign." },
+        { num: 4, arabic: "الْقُدُّوسُ", meaning: "The Holy", surah: "Al-Hashr (59:23)", verse: "الْقُدُّوسُ", translation: "The Holy." },
+        { num: 5, arabic: "السَّلَامُ", meaning: "The Source of Peace", surah: "Al-Hashr (59:23)", verse: "السَّلَامُ", translation: "The Source of Peace." },
+        { num: 6, arabic: "الْمُؤْمِنُ", meaning: "The Giver of Faith", surah: "Al-Hashr (59:23)", verse: "الْمُؤْمِنُ", translation: "The Giver of Faith." },
+        { num: 7, arabic: "الْمُهَيْمِنُ", meaning: "The Guardian", surah: "Al-Hashr (59:23)", verse: "الْمُهَيْمِنُ", translation: "The Guardian." },
+        { num: 8, arabic: "الْعَزِيزُ", meaning: "The Almighty", surah: "Al-Hashr (59:23)", verse: "الْعَزِيزُ", translation: "The Almighty." },
+        { num: 9, arabic: "الْجَبَّارُ", meaning: "The Compeller", surah: "Al-Hashr (59:23)", verse: "الْجَبَّارُ", translation: "The Compeller." },
+        { num: 10, arabic: "الْمُتَكَبِّرُ", meaning: "The Majestic", surah: "Al-Hashr (59:23)", verse: "الْمُتَكَبِّرُ", translation: "The Majestic." },
+        { num: 11, arabic: "الْخَالِقُ", meaning: "The Creator", surah: "Al-Hashr (59:24)", verse: "هُوَ اللَّهُ الْخَالِقُ", translation: "He is Allah, the Creator." },
+        { num: 12, arabic: "الْبَارِئُ", meaning: "The Maker", surah: "Al-Hashr (59:24)", verse: "الْبَارِئُ", translation: "The Maker." },
+        { num: 13, arabic: "الْمُصَوِّرُ", meaning: "The Shaper", surah: "Al-Hashr (59:24)", verse: "الْمُصَوِّرُ", translation: "The Shaper." },
+        { num: 14, arabic: "الْغَفَّارُ", meaning: "The Great Forgiver", surah: "Ghafir (40:42)", verse: "وَأُفَوِّضُ أَمْرِي إِلَى اللَّهِ ۚ إِنَّ اللَّهَ بَصِيرٌ بِالْعِبَادِ", translation: "And I entrust my affair to Allah. Indeed, Allah is Seeing of His servants." },
+        { num: 15, arabic: "الْقَهَّارُ", meaning: "The Subduer", surah: "Ar-Ra'd (13:16)", verse: "قُلْ أَغَيْرَ اللَّهِ أَتَّخِذُ وَلِيًّا", translation: "Say, 'Is other than Allah I take as a protector?'" },
+        { num: 16, arabic: "الْوَهَّابُ", meaning: "The Bestower", surah: "Sad (38:35)", verse: "رَبِّ اغْفِرْ لِي وَهَبْ لِي مُلْكًا لَّا يَنبَغِي لِأَحَدٍ مِّن بَعْدِي", translation: "My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me." },
+        { num: 17, arabic: "الرَّزَّاقُ", meaning: "The Provider", surah: "Adh-Dhariyat (51:58)", verse: "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ", translation: "Indeed, Allah is the Provider." },
+        { num: 18, arabic: "الْفَتَّاحُ", meaning: "The Opener", surah: "Saba (34:26)", verse: "قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِالْحَقِّ", translation: "Say, 'Our Lord will bring us together; then He will judge between us in truth.'" },
+        { num: 19, arabic: "الْعَلِيمُ", meaning: "The All-Knowing", surah: "Al-Baqarah (2:158)", verse: "إِنَّ اللَّهَ عَلِيمٌ حَكِيمٌ", translation: "Indeed, Allah is Knowing and Wise." },
+        { num: 20, arabic: "الْقَابِضُ", meaning: "The Withholder", surah: "Al-Baqarah (2:245)", verse: "وَاللَّهُ يَقْبِضُ وَيَبْسُطُ", translation: "Allah withholds and extends." },
+        { num: 21, arabic: "الْبَاسِطُ", meaning: "The Extender", surah: "Al-Baqarah (2:245)", verse: "وَاللَّهُ يَقْبِضُ وَيَبْسُطُ", translation: "Allah withholds and extends." },
+        { num: 22, arabic: "الْخَافِضُ", meaning: "The Reducer", surah: "At-Tin (95:5)", verse: "ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ", translation: "Then We reduced him to the lowest of the low." },
+        { num: 23, arabic: "الرَّافِعُ", meaning: "The Exalter", surah: "Al-Mujadila (58:11)", verse: "يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ", translation: "Allah will raise those who have believed among you." },
+        { num: 24, arabic: "الْمُعِزُّ", meaning: "The Honorer", surah: "Ali 'Imran (3:26)", verse: "تُعِزُّ مَن تَشَاء", translation: "You honor whom You will." },
+        { num: 25, arabic: "الْمُذِلُّ", meaning: "The Abaser", surah: "Ali 'Imran (3:26)", verse: "تُذِلُّ مَن تَشَاء", translation: "You disgrace whom You will." },
+        { num: 26, arabic: "السَّمِيعُ", meaning: "The All-Hearing", surah: "Al-Baqarah (2:127)", verse: "إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ", translation: "Indeed, You are the Hearing, the Knowing." },
+        { num: 27, arabic: "الْبَصِيرُ", meaning: "The All-Seeing", surah: "Al-Isra (17:1)", verse: "إِنَّهُ هُوَ السَّمِيعُ الْبَصِيرُ", translation: "Indeed, He is the Hearing, the Seeing." },
+        { num: 28, arabic: "الْحَكَمُ", meaning: "The Judge", surah: "Al-Hajj (22:69)", verse: "اللَّهُ يَحْكُمُ بَيْنَكُمْ", translation: "Allah will judge between you." },
+        { num: 29, arabic: "الْعَدْلُ", meaning: "The Just", surah: "Al-An'am (6:115)", verse: "وَتَمَّتْ كَلِمَتُ رَبِّكَ صِدْقًا وَعَدْلًا", translation: "The word of your Lord has been fulfilled in truth and justice." },
+        { num: 30, arabic: "اللَّطِيفُ", meaning: "The Subtle", surah: "Al-An'am (6:103)", verse: "لَا تُدْرِكُهُ الْأَبْصَارُ وَهُوَ يُدْرِكُ الْأَبْصَارَ ۖ وَهُوَ اللَّطِيفُ الْخَبِيرُ", translation: "Vision perceives Him not, but He perceives vision; and He is the Subtle, the Acquainted." },
+        { num: 31, arabic: "الْخَبِيرُ", meaning: "The All-Aware", surah: "Al-An'am (6:18)", verse: "وَهُوَ الْحَكِيمُ الْخَبِيرُ", translation: "And He is the Wise, the Acquainted." },
+        { num: 32, arabic: "الْحَلِيمُ", meaning: "The Forbearing", surah: "Al-Baqarah (2:235)", verse: "وَاعْلَمُوا أَنَّ اللَّهَ يَعْلَمُ مَا فِي أَنفُسِكُمْ فَاحْذَرُوهُ ۚ وَاعْلَمُوا أَنَّ اللَّهَ غَفُورٌ حَلِيمٌ", translation: "Know that Allah is Forgiving and Forbearing." },
+        { num: 33, arabic: "الْعَظِيمُ", meaning: "The Magnificent", surah: "Al-Baqarah (2:255)", verse: "وَهُوَ الْعَلِيُّ الْعَظِيمُ", translation: "And He is the Most High, the Most Great." },
+        { num: 34, arabic: "الْغَفُورُ", meaning: "The Forgiving", surah: "Ghafir (40:42)", verse: "إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ", translation: "Indeed, Allah is Forgiving and Merciful." },
+        { num: 35, arabic: "الشَّكُورُ", meaning: "The Appreciative", surah: "Fatir (35:34)", verse: "إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ", translation: "Indeed, our Lord is Forgiving and Appreciative." },
+        { num: 36, arabic: "الْعَلِيُّ", meaning: "The Most High", surah: "Al-Baqarah (2:255)", verse: "وَهُوَ الْعَلِيُّ الْعَظِيمُ", translation: "And He is the Most High, the Most Great." },
+        { num: 37, arabic: "الْكَبِيرُ", meaning: "The Great", surah: "Ar-Ra'd (13:9)", verse: "هُوَ الْكَبِيرُ الْمُتَعَالِ", translation: "He is the Great, the Exalted." },
+        { num: 38, arabic: "الْحَفِيظُ", meaning: "The Preserver", surah: "Hud (11:57)", verse: "إِنَّ رَبِّي حَفِيظٌ عَلَىٰ كُلِّ شَيْءٍ", translation: "Indeed, my Lord is Preserver over all things." },
+        { num: 39, arabic: "الْمُقِيتُ", meaning: "The Sustainer", surah: "An-Nisa (4:85)", verse: "وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ مُّقِيتًا", translation: "And Allah is ever, over all things, Sustainer." },
+        { num: 40, arabic: "الْحَسِيبُ", meaning: "The Reckoner", surah: "An-Nisa (4:6)", verse: "وَكَفَىٰ بِاللَّهِ حَسِيبًا", translation: "And sufficient is Allah as Reckoner." },
+        { num: 41, arabic: "الْجَلِيلُ", meaning: "The Majestic", surah: "Ar-Rahman (55:27)", verse: "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ", translation: "And there remains the Face of your Lord, Owner of Majesty and Honor." },
+        { num: 42, arabic: "الْكَرِيمُ", meaning: "The Generous", surah: "An-Naml (27:40)", verse: "إِنَّ رَبِّي غَنِيٌّ كَرِيمٌ", translation: "Indeed, my Lord is Free of need and Generous." },
+        { num: 43, arabic: "الرَّقِيبُ", meaning: "The Watchful", surah: "Al-Ahzab (33:52)", verse: "وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ رَّقِيبًا", translation: "And Allah is ever, over all things, Watchful." },
+        { num: 44, arabic: "الْمُجِيبُ", meaning: "The Responsive", surah: "Hud (11:61)", verse: "إِنَّ رَبِّي قَرِيبٌ مُّجِيبٌ", translation: "Indeed, my Lord is Near and Responsive." },
+        { num: 45, arabic: "الْوَاسِعُ", meaning: "The All-Encompassing", surah: "Al-Baqarah (2:268)", verse: "وَاللَّهُ وَاسِعٌ عَلِيمٌ", translation: "And Allah is All-Encompassing and Knowing." },
+        { num: 46, arabic: "الْحَكِيمُ", meaning: "The Wise", surah: "Luqman (31:27)", verse: "إِنَّ اللَّهَ عَزِيزٌ حَكِيمٌ", translation: "Indeed, Allah is Exalted in Might and Wise." },
+        { num: 47, arabic: "الْوَدُودُ", meaning: "The Loving", surah: "Hud (11:90)", verse: "إِنَّ رَبِّي رَحِيمٌ وَدُودٌ", translation: "Indeed, my Lord is Merciful and Loving." },
+        { num: 48, arabic: "الْمَجِيدُ", meaning: "The Glorious", surah: "Hud (11:73)", verse: "إِنَّهُ حَمِيدٌ مَّجِيدٌ", translation: "Indeed, He is Praiseworthy and Glorious." },
+        { num: 49, arabic: "الْبَاعِثُ", meaning: "The Resurrector", surah: "Al-Hajj (22:7)", verse: "وَأَنَّ اللَّهَ يَبْعَثُ مَن فِي الْقُبُورِ", translation: "And that Allah will resurrect those in the graves." },
+        { num: 50, arabic: "الشَّهِيدُ", meaning: "The Witness", surah: "Al-Mujadila (58:6)", verse: "وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ", translation: "And Allah is, over all things, Witness." },
+        { num: 51, arabic: "الْحَقُّ", meaning: "The Truth", surah: "Al-Hajj (22:6)", verse: "وَأَنَّ اللَّهَ هُوَ الْحَقُّ", translation: "And that Allah is the Truth." },
+        { num: 52, arabic: "الْوَكِيلُ", meaning: "The Trustee", surah: "Ali 'Imran (3:173)", verse: "وَكَفَىٰ بِاللَّهِ وَكِيلًا", translation: "And sufficient is Allah as Trustee." },
+        { num: 53, arabic: "الْقَوِيُّ", meaning: "The Strong", surah: "Al-Hajj (22:40)", verse: "إِنَّ اللَّهَ قَوِيٌّ عَزِيزٌ", translation: "Indeed, Allah is Powerful and Exalted in Might." },
+        { num: 54, arabic: "الْمَتِينُ", meaning: "The Firm", surah: "Adh-Dhariyat (51:58)", verse: "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ", translation: "Indeed, Allah is the Provider, the Possessor of Strength, the Firm." },
+        { num: 55, arabic: "الْوَلِيُّ", meaning: "The Protector", surah: "Al-Baqarah (2:257)", verse: "اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا", translation: "Allah is the Protector of those who believe." },
+        { num: 56, arabic: "الْحَمِيدُ", meaning: "The Praiseworthy", surah: "Ibrahim (14:8)", verse: "إِنَّ اللَّهَ لَغَنِيٌّ حَمِيدٌ", translation: "Indeed, Allah is Free of need and Praiseworthy." },
+        { num: 57, arabic: "الْمُحْصِي", meaning: "The Reckoner", surah: "Al-Mujadila (58:6)", verse: "أَحْصَاهُ اللَّهُ", translation: "Allah has enumerated it." },
+        { num: 58, arabic: "الْمُبْدِئُ", meaning: "The Originator", surah: "Yunus (10:34)", verse: "قُلْ هَلْ مِن شُرَكَائِكُم مَّن يَبْدَأُ الْخَلْقَ", translation: "Say, 'Is there of your partners anyone who begins creation?'" },
+        { num: 59, arabic: "الْمُعِيدُ", meaning: "The Restorer", surah: "Yunus (10:34)", verse: "ثُمَّ يُعِيدُهُ", translation: "Then He repeats it." },
+        { num: 60, arabic: "الْمُحْيِي", meaning: "The Giver of Life", surah: "Al-Hadid (57:2)", verse: "يُحْيِي وَيُمِيتُ", translation: "He gives life and causes death." },
+        { num: 61, arabic: "الْمُمِيتُ", meaning: "The Creator of Death", surah: "Al-Hadid (57:2)", verse: "يُحْيِي وَيُمِيتُ", translation: "He gives life and causes death." },
+        { num: 62, arabic: "الْحَيُّ", meaning: "The Ever-Living", surah: "Ali 'Imran (3:2)", verse: "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ", translation: "Allah — there is no deity except Him, the Ever-Living, the Sustainer." },
+        { num: 63, arabic: "الْقَيُّومُ", meaning: "The Sustainer", surah: "Ali 'Imran (3:2)", verse: "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ", translation: "Allah — there is no deity except Him, the Ever-Living, the Sustainer." },
+        { num: 64, arabic: "الْوَاجِدُ", meaning: "The Perceiver", surah: "Sad (38:44)", verse: "إِنَّا وَجَدْنَاهُ صَابِرًا", translation: "Indeed, We found him patient." },
+        { num: 65, arabic: "الْمَاجِدُ", meaning: "The Noble", surah: "Al-Buruj (85:15)", verse: "ذُو الْعَرْشِ الْمَجِيدُ", translation: "Owner of the Throne, the Noble." },
+        { num: 66, arabic: "الْوَاحِدُ", meaning: "The One", surah: "Al-Mu'minun (23:116)", verse: "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۖ لَا إِلَٰهَ إِلَّا هُوَ رَبُّ الْعَرْشِ الْكَرِيمِ", translation: "So exalted is Allah, the Sovereign, the Truth. There is no deity except Him, Lord of the Noble Throne." },
+        { num: 67, arabic: "الْأَحَدُ", meaning: "The Only One", surah: "Al-Ikhlas (112:1)", verse: "قُلْ هُوَ اللَّهُ أَحَدٌ", translation: "Say, 'He is Allah, the One.'" },
+        { num: 68, arabic: "الصَّمَدُ", meaning: "The Eternal Refuge", surah: "Al-Ikhlas (112:2)", verse: "اللَّهُ الصَّمَدُ", translation: "Allah, the Eternal Refuge." },
+        { num: 69, arabic: "الْقَادِرُ", meaning: "The Able", surah: "Al-An'am (6:65)", verse: "قُلْ هُوَ الْقَادِرُ", translation: "Say, 'He is the Able.'" },
+        { num: 70, arabic: "الْمُقْتَدِرُ", meaning: "The Omnipotent", surah: "Al-Kahf (18:45)", verse: "وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ مُّقْتَدِرًا", translation: "And Allah is ever, over all things, Omnipotent." },
+        { num: 71, arabic: "الْمُقَدِّمُ", meaning: "The Expediter", surah: "Hud (11:121)", verse: "وَلا تَعْجَلْ", translation: "And do not hasten." },
+        { num: 72, arabic: "الْمُؤَخِّرُ", meaning: "The Delayer", surah: "Nuh (71:4)", verse: "إِنَّ اللَّهَ يُؤَخِّرُهُمْ", translation: "Indeed, Allah delays them." },
+        { num: 73, arabic: "الْأَوَّلُ", meaning: "The First", surah: "Al-Hadid (57:3)", verse: "هُوَ الْأَوَّلُ", translation: "He is the First." },
+        { num: 74, arabic: "الْآخِرُ", meaning: "The Last", surah: "Al-Hadid (57:3)", verse: "وَالْآخِرُ", translation: "And the Last." },
+        { num: 75, arabic: "الظَّاهِرُ", meaning: "The Manifest", surah: "Al-Hadid (57:3)", verse: "وَالظَّاهِرُ", translation: "And the Manifest." },
+        { num: 76, arabic: "الْبَاطِنُ", meaning: "The Hidden", surah: "Al-Hadid (57:3)", verse: "وَالْبَاطِنُ", translation: "And the Hidden." },
+        { num: 77, arabic: "الْوَالِي", meaning: "The Governor", surah: "Ar-Ra'd (13:11)", verse: "وَاللَّهُ وَلِيُّ الْمُؤْمِنِينَ", translation: "And Allah is the Guardian of the believers." },
+        { num: 78, arabic: "الْمُتَعَالِي", meaning: "The Exalted", surah: "Ar-Ra'd (13:9)", verse: "هُوَ الْكَبِيرُ الْمُتَعَالِ", translation: "He is the Great, the Exalted." },
+        { num: 79, arabic: "الْبَرُّ", meaning: "The Righteous", surah: "At-Tur (52:28)", verse: "إِنَّا كُنَّا مِن قَبْلُ نَدْعُوهُ ۖ إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ", translation: "Indeed, we used to call upon Him before. Indeed, He is the Righteous, the Merciful." },
+        { num: 80, arabic: "التَّوَّابُ", meaning: "The Acceptor of Repentance", surah: "Al-Baqarah (2:128)", verse: "إِنَّكَ أَنتَ التَّوَّابُ الرَّحِيمُ", translation: "Indeed, You are the Accepting of Repentance, the Merciful." },
+        { num: 81, arabic: "الْمُنْتَقِمُ", meaning: "The Avenger", surah: "As-Sajda (32:22)", verse: "إِنَّا مِنَ الْمُجْرِمِينَ مُنتَقِمُونَ", translation: "Indeed, We will take retribution upon the criminals." },
+        { num: 82, arabic: "الْعَفُوُّ", meaning: "The Pardoner", surah: "An-Nisa (4:99)", verse: "وَكَانَ اللَّهُ عَفُوًّا غَفُورًا", translation: "And Allah is ever Pardoning and Forgiving." },
+        { num: 83, arabic: "الرَّؤُفُ", meaning: "The Kind", surah: "Al-Hashr (59:10)", verse: "إِنَّكَ رَؤُوفٌ رَّحِيمٌ", translation: "Indeed, You are Kind and Merciful." },
+        { num: 84, arabic: "مَالِكُ الْمُلْكِ", meaning: "Owner of Sovereignty", surah: "Ali 'Imran (3:26)", verse: "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ", translation: "Say, 'O Allah, Owner of Sovereignty.'" },
+        { num: 85, arabic: "ذُو الْجَلَالِ وَالْإِكْرَامِ", meaning: "Owner of Majesty and Honor", surah: "Ar-Rahman (55:27)", verse: "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ", translation: "And there remains the Face of your Lord, Owner of Majesty and Honor." },
+        { num: 86, arabic: "الْمُقْسِطُ", meaning: "The Just", surah: "Al-Jinn (72:15)", verse: "وَأَمَّا الْقَاسِطُونَ فَكَانُوا لِجَهَنَّمَ حَطَبًا", translation: "But the unjust will be firewood for Hell." },
+        { num: 87, arabic: "الْجَامِعُ", meaning: "The Gatherer", surah: "Ali 'Imran (3:9)", verse: "إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ", translation: "Indeed, You will gather the people for a Day about which there is no doubt." },
+        { num: 88, arabic: "الْغَنِيُّ", meaning: "The Self-Sufficient", surah: "Al-Hajj (22:64)", verse: "إِنَّ اللَّهَ لَغَنِيٌّ حَمِيدٌ", translation: "Indeed, Allah is Free of need and Praiseworthy." },
+        { num: 89, arabic: "الْمُغْنِي", meaning: "The Enricher", surah: "At-Tawbah (9:28)", verse: "وَإِنْ خِفْتُمْ عَيْلَةً فَسَوْفَ يُغْنِيكُمُ اللَّهُ مِن فَضْلِهِ", translation: "And if you fear poverty, Allah will enrich you from His bounty." },
+        { num: 90, arabic: "الْمَانِعُ", meaning: "The Preventer", surah: "Al-Mulk (67:21)", verse: "مَّن ذَا الَّذِي يَرْزُقُكُمْ إِنْ أَمْسَكَ رِزْقَهُ", translation: "Who is it that could provide for you if He withheld His provision?" },
+        { num: 91, arabic: "الضَّارُّ", meaning: "The Distressor", surah: "Yunus (10:107)", verse: "وَإِن يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ", translation: "And if Allah touches you with harm, none can remove it but He." },
+        { num: 92, arabic: "النَّافِعُ", meaning: "The Benefactor", surah: "Yunus (10:107)", verse: "وَإِن يُرِدْكَ بِخَيْرٍ فَلَا رَادَّ لِفَضْلِهِ", translation: "And if He intends for you good, none can repel His bounty." },
+        { num: 93, arabic: "النُّورُ", meaning: "The Light", surah: "An-Nur (24:35)", verse: "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ", translation: "Allah is the Light of the heavens and the earth." },
+        { num: 94, arabic: "الْهَادِي", meaning: "The Guide", surah: "Al-Furqan (25:31)", verse: "وَكَفَىٰ بِرَبِّكَ هَادِيًا وَنَصِيرًا", translation: "And sufficient is your Lord as Guide and Helper." },
+        { num: 95, arabic: "الْبَدِيعُ", meaning: "The Incomparable", surah: "Al-Baqarah (2:117)", verse: "بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ", translation: "Originator of the heavens and the earth." },
+        { num: 96, arabic: "الْبَاقِي", meaning: "The Everlasting", surah: "Ar-Rahman (55:27)", verse: "وَيَبْقَىٰ وَجْهُ رَبِّكَ", translation: "And there remains the Face of your Lord." },
+        { num: 97, arabic: "الْوَارِثُ", meaning: "The Inheritor", surah: "Al-Hijr (15:23)", verse: "وَإِنَّا لَنَحْنُ نُحْيِي وَنُمِيتُ وَنَحْنُ الْوَارِثُونَ", translation: "Indeed, it is We who give life and cause death, and We are the Inheritor." },
+        { num: 98, arabic: "الرَّشِيدُ", meaning: "The Guide to Right Path", surah: "Al-Kahf (18:24)", verse: "عَسَىٰ أَن يَهْدِيَنِ رَبِّي لِأَقْرَبَ مِنْ هَٰذَا رَشَدًا", translation: "Perhaps my Lord will guide me to what is nearer than this to right conduct." },
+        { num: 99, arabic: "الصَّبُورُ", meaning: "The Patient", surah: "Al-Baqarah (2:153)", verse: "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ", translation: "Indeed, Allah is with the patient." }
+    ];
+
+    // For brevity, I'll show the first 9. In the complete file, I will include all 99.
+    // You will receive the full list with all 99 names before final commit.
+
+    const container = document.getElementById('namesContainer');
+    if (container) {
+        namesData.forEach(name => {
+            const card = document.createElement('div');
+            card.className = 'name-card';
+            card.innerHTML = `
+                <div class="name-row">
+                    <div class="name-number">${name.num}</div>
+                    <div class="name-arabic">${name.arabic}</div>
+                    <div class="name-meaning">${name.meaning}</div>
+                    <div class="toggle-icon" onclick="toggleVerse(this)">📖</div>
+                </div>
+                <div class="quran-box-hidden">
+                    <div class="quran-arabic">${name.verse}</div>
+                    <div><strong>Meaning:</strong> ${name.translation}</div>
+                    <div class="verse-reference">— Surah ${name.surah}</div>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function toggleIcon(icon) {
+        icon.classList.toggle('rotated');
+        if (icon.classList.contains('rotated')) {
+            icon.textContent = '📖';
+        } else {
+            icon.textContent = '📖';
+        }
+    }
+
+    function toggleVerse(element) {
+        const card = element.closest('.name-card');
+        const verseBox = card.querySelector('.quran-box-hidden');
+        if (verseBox) {
+            verseBox.classList.toggle('show');
+        }
+    }
+</script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,sv,ar,ur,fr,de,es,tr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="js/flowers.js"></script>
+</body>
+</html>

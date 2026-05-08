@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Hajj & Umrah Quiz | Islamic Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Bismillah -->
+<div class="bismillah">
+<div style="text-align: center; font-size: 2.2rem; color: #D4A373; margin: 0.5rem 0; line-height: 1.4;">🌸 ✿ 🌻 ❀ 🌺 ✾ 🌼 ✻ 🌸</div>
+    بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ<br>
+    <span style="font-size: 0.9rem;">In the name of Allah, the Most Gracious, the Most Merciful</span>
+</div>
+
+<!-- Navigation with Dropdowns -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="../index.html">🕋 Islamic Hub</a>
+    </div>
+    <div class="menu-toggle">☰</div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        
+        <!-- Hajj Dropdown -->
+        <li class="dropdown">
+            <a href="../hajj/index.html">Hajj ▼</a>
+            <div class="dropdown-content">
+                <a href="../hajj/index.html">📖 Overview</a>
+                <a href="../hajj/basic.html">🌱 Basic Level</a>
+                <a href="../hajj/intermediate.html">📚 Intermediate Level</a>
+                <a href="../hajj/advanced.html">🏛️ Advanced Level</a>
+                <a href="../hajj/quiz.html">📝 Quiz</a>
+                <a href="../hajj/debt-guide.html">💰 Hajj & Debt Guide</a>
+            </div>
+        </li>
+        
+        <!-- Umrah Dropdown -->
+        <li class="dropdown">
+            <a href="index.html">Umrah ▼</a>
+            <div class="dropdown-content">
+                <a href="index.html">📖 Overview</a>
+                <a href="basic.html">🌱 Basic Level</a>
+                <a href="intermediate.html">📚 Intermediate Level</a>
+                <a href="advanced.html">🏛️ Advanced Level</a>
+                <a href="quiz.html">📝 Quiz</a>
+            </div>
+        </li>
+        
+        <!-- Du'as Dropdown -->
+        <li class="dropdown">
+            <a href="../dua/index.html">Du'as ▼</a>
+            <div class="dropdown-content">
+                <a href="../dua/index.html">📖 All Du'as (Master)</a>
+                <a href="../dua/protection.html">🛡️ Protection</a>
+                <a href="../dua/morning-evening.html">🌅 Morning & Evening</a>
+                <a href="../dua/rabbana-40.html">📖 40 Rabbana Duas</a>
+                <a href="../dua/after-salah.html">🕌 After Salah</a>
+                <a href="../dua/family.html">🏠 Family & Children</a>
+                <a href="../dua/health.html">🩺 Health & Healing</a>
+                <a href="../dua/distress.html">😢 Grief & Distress</a>
+                <a href="../dua/hajj-umrah.html">🕋 Hajj & Umrah Du'as</a>
+                <a href="../dua/funeral.html">🕊️ Funeral Du'as</a>
+            </div>
+        </li>
+        
+        <!-- Fiqh Dropdown -->
+        <li class="dropdown">
+            <a href="../fiqh/index.html">Fiqh ▼</a>
+            <div class="dropdown-content">
+                <a href="../fiqh/index.html">📖 Overview</a>
+                <a href="../fiqh/basic.html">🌱 Basic Rulings</a>
+                <a href="../fiqh/intermediate.html">📚 Intermediate</a>
+                <a href="../fiqh/advanced.html">🏛️ Advanced Fiqh</a>
+            </div>
+        </li>
+        
+        <li><a href="../glossary.html">Glossary</a></li>
+        <li><a href="../references.html">References</a></li>
+        <li><a href="../about.html">About</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    
+    <div style="background: #D4A373; color: #1F4A3A; padding: 0.5rem 1rem; border-radius: 8px; display: inline-block; margin-bottom: 1rem;">
+        📝 Test Your Knowledge — Hajj & Umrah (20 Questions)
+    </div>
+    
+    <h1>🕋 Hajj & Umrah Knowledge Quiz</h1>
+    
+    <div class="quran-box">
+        "And complete the Hajj and Umrah for Allah."<br>
+        <p>— Surah Al-Baqarah 2:196</p>
+    </div>
+    
+    <p style="margin-bottom: 2rem;">Test your understanding of both pilgrimages — from basic obligations to advanced fiqh and spiritual meanings. This quiz mixes Hajj and Umrah questions to help you distinguish between them.</p>
+    
+    <!-- Quiz Container -->
+    <div id="quizContainer" class="quiz-container"></div>
+    <div id="resultsContainer"></div>
+    
+</main>
+
+<footer class="footer">
+    <p>🕋 Islamic Hub — Hajj, Umrah & Supplications</p>
+    <p>📚 Sources: Dar al-Iftaa al-Misriyyah, Sahih al-Bukhari, Sahih Muslim, Fiqh us Sunnah</p>
+    <p>🤲 May Allah accept our efforts — <a href="../references.html">References</a></p>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/quiz.js"></script>
+
+<script>
+// Hajj & Umrah Combined Quiz (20 Questions)
+const hajjUmrahQuestions = [
+    // HAJJ QUESTIONS (1-10)
+    {
+        text: "Which pillar of Islam is Hajj?",
+        options: ["Second pillar", "Third pillar", "Fourth pillar", "Fifth pillar"],
+        correct: 3,
+        explanation: "Hajj is the fifth pillar of Islam, after Shahada, Salah, Zakat, and Sawm.",
+        hint: "Think of the order: 1. Shahada, 2. Salah, 3. Zakat, 4. Sawm, 5. ?"
+    },
+    {
+        text: "What is the most important day of Hajj, described by the Prophet (ﷺ) as 'Hajj is ___'?",
+        options: ["The day of Nahr (10th)", "The day of Tarwiyah (8th)", "The day of Arafah (9th)", "The days of Tashreeq (11th-13th)"],
+        correct: 2,
+        explanation: "The Prophet (ﷺ) said: 'Hajj is Arafah.' (Tirmidhi, Nasai) — Wuquf at Arafah is the essence of Hajj.",
+        hint: "The day when pilgrims stand and make du'a from noon until sunset."
+    },
+    {
+        text: "Which type of Hajj involves performing Umrah first, exiting Ihram, then entering Ihram again for Hajj?",
+        options: ["Hajj al-Ifrad", "Hajj al-Tamattu'", "Hajj al-Qiran", "Hajj al-Wada"],
+        correct: 1,
+        explanation: "Tamattu' is the most common form. The Prophet (ﷺ) commanded it for those not bringing sacrificial animals.",
+        hint: "It means 'to enjoy' — you enjoy a break between Umrah and Hajj."
+    },
+    {
+        text: "How many pillars (Arkan) does Hajj have?",
+        options: ["3", "4", "5", "7"],
+        correct: 1,
+        explanation: "Hajj has 4 pillars: Ihram, Wuquf at Arafah, Tawaf al-Ifadah, and Sa'i. If any pillar is missed, Hajj is invalid.",
+        hint: "Ihram, Arafah, Tawaf, Sa'i."
+    },
+    {
+        text: "What does 'Wuquf' mean in Hajj?",
+        options: ["Walking between Safa and Marwah", "Standing in prayer and supplication", "Circling the Kaaba", "Stoning the pillars"],
+        correct: 1,
+        explanation: "Wuquf means 'to stand' — pilgrims stand at Arafah making du'a and seeking forgiveness.",
+        hint: "From the Arabic root 'waqafa' meaning to stop/stand."
+    },
+    {
+        text: "What do the two white sheets of Ihram symbolize?",
+        options: ["Wealth and poverty", "Life and death", "The shroud (death preparation)", "Day and night"],
+        correct: 2,
+        explanation: "The two white sheets resemble the shroud (kafan), reminding the pilgrim of death and meeting Allah.",
+        hint: "What do you bury a person in?"
+    },
+    {
+        text: "What is the ruling if a pilgrim misses the Farewell Tawaf (Tawaf al-Wada) in Hajj?",
+        options: ["Hajj is invalid", "Must return to Makkah immediately", "Sacrifice (dam) is required", "Nothing — it is only Sunnah"],
+        correct: 2,
+        explanation: "According to Hanafi and Hanbali schools, a sacrifice (dam) is required. The Farewell Tawaf is wajib (obligatory).",
+        hint: "It's not a pillar, but it is obligatory. If missed, an animal must be sacrificed."
+    },
+    {
+        text: "Where do pilgrims spend the night of the 9th of Dhul-Hijjah after Arafah?",
+        options: ["Mina", "Muzdalifah", "Makkah", "Arafah"],
+        correct: 1,
+        explanation: "After sunset at Arafah, pilgrims travel to Muzdalifah, spend the night under the open sky, then proceed to Mina.",
+        hint: "They collect pebbles here for stoning."
+    },
+    {
+        text: "What is the Talbiyah?",
+        options: ["The call to prayer (Adhan)", "The prayer after Tawaf", "The pilgrim's response to Allah's call", "The du'a for stoning"],
+        correct: 2,
+        explanation: "Talbiyah is 'Labbaik Allahumma Labbaik' — the pilgrim's answer to Allah's command to perform Hajj or Umrah.",
+        hint: "It begins with 'Labbaik' meaning 'Here I am, O Allah'."
+    },
+    {
+        text: "According to prophecy, what will happen to the Kaaba before the Hour?",
+        options: ["It will expand", "It will be destroyed by a man from Abyssinia", "It will move to Jerusalem", "It will be covered in gold"],
+        correct: 1,
+        explanation: "The Prophet (ﷺ) said: 'The Kaaba will be destroyed by a thin-legged man from Abyssinia (Ethiopia).' (Ahmad, Ibn Hibban)",
+        hint: "An eschatological prophecy about the end times."
+    },
+    
+    // UMRAH QUESTIONS (11-15)
+    {
+        text: "Is Umrah obligatory according to the Hanafi school?",
+        options: ["Yes, obligatory once in a lifetime", "No, it is Sunnah (highly recommended)", "Yes, every year", "Only during Ramadan"],
+        correct: 1,
+        explanation: "According to the Hanafi and Maliki schools, Umrah is Sunnah (highly recommended), not obligatory.",
+        hint: "Most scholars say it's not a pillar of Islam."
+    },
+    {
+        text: "What does Sa'i in Umrah commemorate?",
+        options: ["Ibrahim's sacrifice", "Hagar's search for water", "Muhammad's migration", "The conquest of Makkah"],
+        correct: 1,
+        explanation: "Sa'i between Safa and Marwah commemorates Hagar running seven times searching for water for her son Isma'il.",
+        hint: "The mother of Isma'il — she ran between two hills."
+    },
+    {
+        text: "What is the ruling for women's clothing in Ihram for Umrah?",
+        options: ["Must wear niqab (face veil)", "Face and hands uncovered, no gloves", "Must wear gloves", "No restrictions"],
+        correct: 1,
+        explanation: "Women may not wear niqab (face veil) or gloves in Ihram. They use an umbrella or visor to shield from sun.",
+        hint: "Face and hands remain uncovered."
+    },
+    {
+        text: "What is the reward for performing Umrah in Ramadan?",
+        options: ["Multiplied by 10", "Multiplied by 70", "Equivalent to Hajj with the Prophet", "No special reward"],
+        correct: 2,
+        explanation: "The Prophet (ﷺ) said: 'Umrah in Ramadan is equivalent to Hajj with me.' (Bukhari, Muslim)",
+        hint: "A very special reward mentioned in Sahih Hadith."
+    },
+    {
+        text: "How many circuits (rounds) are there in Tawaf for Umrah?",
+        options: ["3", "5", "7", "10"],
+        correct: 2,
+        explanation: "Tawaf consists of 7 circuits around the Kaaba, starting and ending at the Black Stone.",
+        hint: "The same number as Hajj."
+    },
+    
+    // DISTINCTION QUESTIONS (16-20) — Mixing Hajj & Umrah
+    {
+        text: "Which ritual is performed in Hajj but NOT in Umrah?",
+        options: ["Tawaf", "Sa'i", "Wuquf at Arafah", "Ihram"],
+        correct: 2,
+        explanation: "Wuquf at Arafah is unique to Hajj. Umrah does not include standing at Arafah, staying in Muzdalifah, or stoning the Jamarat.",
+        hint: "The most important day of Hajj is not part of Umrah."
+    },
+    {
+        text: "During which month(s) can you perform Umrah?",
+        options: ["Only Dhul-Hijjah", "Only Ramadan", "Any time except Hajj days", "Only Shawwal"],
+        correct: 2,
+        explanation: "Umrah can be performed any time of the year, except during the days of Hajj (8th-13th Dhul-Hijjah).",
+        hint: "It is the 'minor pilgrimage' — no fixed dates."
+    },
+    {
+        text: "What is the duration of Hajj compared to Umrah?",
+        options: ["Hajj is shorter", "Hajj is longer (5-6 days)", "Same duration", "Umrah is longer"],
+        correct: 1,
+        explanation: "Hajj takes 5-6 days (8th-13th Dhul-Hijjah). Umrah takes 2-4 hours.",
+        hint: "One is 'major pilgrimage', the other is 'minor pilgrimage'."
+    },
+    {
+        text: "Which of the following is required for Hajj but NOT for Umrah?",
+        options: ["Ihram", "Tawaf", "Sacrifice (Hady) for Tamattu'", "Sa'i"],
+        correct: 2,
+        explanation: "A sacrificial animal (Hady) is required for Hajj al-Tamattu' and Hajj al-Qiran. Umrah alone does not require an animal sacrifice.",
+        hint: "Think about what pilgrims do during Eid al-Adha."
+    },
+    {
+        text: "What did the Prophet (ﷺ) say about performing Hajj and Umrah consecutively?",
+        options: ["They are disliked", "They remove poverty and sin", "Only Hajj counts", "Only Umrah counts"],
+        correct: 1,
+        explanation: "The Prophet (ﷺ) said: 'Perform Hajj and Umrah consecutively, for they remove poverty and sin as the bellows remove impurities from iron.' (Tirmidhi)",
+        hint: "A beautiful Hadith about combining both."
+    }
+];
+
+// Initialize quiz when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    const quiz = new QuizEngine(hajjUmrahQuestions, 'quizContainer', 'resultsContainer');
+    quiz.start();
+});
+</script>
+
+<script src="js/flowers.js"></script>
+</body>
+</html>
