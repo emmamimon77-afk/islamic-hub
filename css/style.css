@@ -623,3 +623,17 @@ body {
     background-repeat: repeat-x;
     padding-top: 0.5rem;
 }
+/* Improve mobile readability for long Arabic du'as */
+@media (max-width: 640px) {
+    .dua-card .arabic-text,
+    .dua-card .arabic-verse,
+    .verse-card .arabic-verse,
+    .dua-box .arabic-verse,
+    .arabic-long {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+        word-break: break-word !important;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+    }
+}
