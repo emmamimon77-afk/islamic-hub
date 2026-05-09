@@ -2,43 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Health & Healing Du'as | Islamic Hub</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .dua-card {
             background: #F9F6F0;
             border-radius: 20px;
-            padding: 1.8rem;
-            margin-bottom: 2rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
             border: 1px solid #E2DDD3;
             transition: all 0.2s ease;
         }
-        .dua-card:hover {
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            border-color: #D4A373;
-        }
         .arabic-text {
             font-family: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
-            font-size: 1.5rem;
-            line-height: 2.2rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
             text-align: right;
             direction: rtl;
             color: #1F4A3A;
-            margin-bottom: 1rem;
-            word-break: keep-all;
-            white-space: normal;
             background: white;
             padding: 1rem;
             border-radius: 12px;
+            margin-bottom: 0.75rem;
+            word-break: break-word;
+            white-space: normal;
         }
         .meaning-text {
             font-size: 1rem;
-            line-height: 1.6;
+            line-height: 1.5;
             color: #2E2E2E;
-            margin-top: 0.75rem;
-            padding-top: 0.75rem;
-            border-top: 2px solid #D4A373;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #D4A373;
         }
         .virtue-note {
             font-size: 0.85rem;
@@ -56,42 +52,33 @@
             font-size: 0.7rem;
             padding: 0.2rem 0.8rem;
             border-radius: 20px;
-            margin-bottom: 1rem;
-            letter-spacing: 1px;
-        }
-        .special-prayer {
-            background: #E8F4F8;
-            border: 2px solid #1F4A3A;
-            border-radius: 20px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            text-align: center;
+            margin-bottom: 0.75rem;
         }
         @media (max-width: 640px) {
-            .arabic-text { font-size: 1.2rem; line-height: 1.8rem; padding: 0.75rem; }
-            .dua-card { padding: 1rem; }
+            .arabic-text {
+                font-size: 1.1rem;
+                line-height: 1.6rem;
+                padding: 0.75rem;
+            }
+            .dua-card {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
 <body>
 
 <div class="bismillah">
-<div style="text-align: center; font-size: 2.2rem; color: #D4A373; margin: 0.5rem 0; line-height: 1.4;">🌸 ✿ 🌻 ❀ 🌺 ✾ 🌼 ✻ 🌸</div>
     بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>
     <span style="font-size: 0.9rem;">In the name of Allah, the Most Gracious, the Most Merciful</span>
 </div>
 
 <nav class="navbar">
-    <div class="logo">
-        <a href="../index.html">🕋 Islamic Hub</a>
-    </div>
+    <div class="logo"><a href="../index.html">🕋 Islamic Hub</a></div>
     <div class="menu-toggle">☰</div>
     <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        
-        <!-- Hajj Dropdown -->
-        <li class="dropdown">
-            <a href="../hajj/index.html">Hajj ▼</a>
+        <li class="dropdown"><a href="../hajj/index.html">Hajj ▼</a>
             <div class="dropdown-content">
                 <a href="../hajj/index.html">📖 Overview</a>
                 <a href="../hajj/basic.html">🌱 Basic Level</a>
@@ -101,10 +88,7 @@
                 <a href="../hajj/debt-guide.html">💰 Hajj & Debt Guide</a>
             </div>
         </li>
-        
-        <!-- Umrah Dropdown -->
-        <li class="dropdown">
-            <a href="../umrah/index.html">Umrah ▼</a>
+        <li class="dropdown"><a href="../umrah/index.html">Umrah ▼</a>
             <div class="dropdown-content">
                 <a href="../umrah/index.html">📖 Overview</a>
                 <a href="../umrah/basic.html">🌱 Basic Level</a>
@@ -113,10 +97,7 @@
                 <a href="../umrah/quiz.html">📝 Quiz</a>
             </div>
         </li>
-        
-        <!-- Du'as Dropdown -->
-        <li class="dropdown">
-            <a href="index.html">Du'as ▼</a>
+        <li class="dropdown"><a href="index.html">Du'as ▼</a>
             <div class="dropdown-content">
                 <a href="index.html">📖 All Du'as (Master)</a>
                 <a href="protection.html">🛡️ Protection</a>
@@ -130,10 +111,7 @@
                 <a href="funeral.html">🕊️ Funeral Du'as</a>
             </div>
         </li>
-        
-        <!-- Fiqh Dropdown -->
-        <li class="dropdown">
-            <a href="../fiqh/index.html">Fiqh ▼</a>
+        <li class="dropdown"><a href="../fiqh/index.html">Fiqh ▼</a>
             <div class="dropdown-content">
                 <a href="../fiqh/index.html">📖 Overview</a>
                 <a href="../fiqh/basic.html">🌱 Basic Rulings</a>
@@ -141,7 +119,6 @@
                 <a href="../fiqh/advanced.html">🏛️ Advanced Fiqh</a>
             </div>
         </li>
-        
         <li><a href="../glossary.html">Glossary</a></li>
         <li><a href="../references.html">References</a></li>
         <li><a href="../about.html">About</a></li>
@@ -156,7 +133,7 @@
         </div>
         <h1>Health & Healing Du'as</h1>
         <div class="quran-box" style="background: #E8F4F8; color: #1F4A3A;">
-            <div class="arabic-text" style="background: transparent; padding: 0; font-size: 1.3rem;">
+            <div class="arabic-text" style="background: transparent; font-size: 1.3rem;">
                 وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِلْمُؤْمِنِينَ
             </div>
             <p>"And We send down of the Quran that which is healing and mercy for the believers."</p>
@@ -164,27 +141,21 @@
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- SPECIAL PRAYER FOR YOUR LOVED ONES               -->
-    <!-- ============================================ -->
-    
-    <div class="special-prayer">
+    <!-- Special Prayer for Loved Ones -->
+    <div class="dua-card">
         <div class="source-badge">🤲 A SPECIAL PRAYER FOR YOUR LOVED ONES (and all the sick)</div>
-        <div class="arabic-verse arabic-long" style="font-size: 1.6rem; background: transparent;">
+        <div class="arabic-text">
             اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا
         </div>
-        <div class="meaning-text" style="border-top-color: #1F4A3A;">
+        <div class="meaning-text">
             "O Allah, Lord of mankind, remove the harm. Heal, for You are the Healer. There is no healing except Your healing, a healing that leaves no illness behind."
         </div>
-        <div class="virtue-note" style="background: #FFF; color: #1F4A3A;">
-            💖 <strong>For your loved ones (and all the sick):</strong> The Prophet (ﷺ) taught this du'a for the sick, whether near or far. Recite it with full trust in Allah. May Allah grant your loved ones complete shifa' and reunite you in health and happiness. Ameen.
+        <div class="virtue-note">
+            💖 <strong>For your loved ones (and all the sick):</strong> The Prophet (ﷺ) taught this du'a for the sick, whether near or far. Recite it with full trust in Allah. May Allah grant complete shifa' and comfort.
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- 1. SURAH AL-FATIHAH (THE OPENING) — SHIFA'    -->
-    <!-- ============================================ -->
-    
+    <!-- Surah Al-Fatihah -->
     <div class="dua-card">
         <div class="source-badge">📖 QURAN · SURAH AL-FATIHAH (1:1-7) — THE GREATEST HEALING</div>
         <div class="arabic-text">
@@ -194,14 +165,11 @@
             "In the name of Allah, the Most Gracious, the Most Merciful. All praise is for Allah, Lord of all worlds. The Most Gracious, the Most Merciful. Master of the Day of Judgment. You alone we worship, and You alone we ask for help. Guide us to the Straight Path — the path of those upon whom You have bestowed favor, not of those who have earned anger, nor of those who are astray."
         </div>
         <div class="virtue-note">
-            💡 <strong>Virtue:</strong> Surah Al-Fatihah is a cure for physical and spiritual ailments. The companions used to recite it over the sick. (Sahih al-Bukhari)
+            💡 Surah Al-Fatihah is a cure for physical and spiritual ailments. (Sahih al-Bukhari)
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- 2. AYAT ASH-SHIFA (QURANIC HEALING VERSES)   -->
-    <!-- ============================================ -->
-    
+    <!-- Quranic Healing Verses -->
     <div class="dua-card">
         <div class="source-badge">📖 QURAN · SURAH YUNUS (10:57) — HEALING FOR THE HEART</div>
         <div class="arabic-text">
@@ -211,7 +179,7 @@
             "O mankind, there has come to you instruction from your Lord and healing for what is in the hearts and guidance and mercy for the believers."
         </div>
         <div class="virtue-note">
-            💡 The Quran heals spiritual diseases: doubt, hypocrisy, anxiety, grief, and despair.
+            💡 The Quran heals spiritual diseases: doubt, anxiety, grief, and despair.
         </div>
     </div>
 
@@ -224,14 +192,11 @@
             "There emerges from their bellies a drink of varying colors, in which there is healing for people."
         </div>
         <div class="virtue-note">
-            💡 Honey is both physical medicine (antibacterial, wound healing) and a barakah from Allah.
+            💡 Honey is both physical medicine and a blessing from Allah.
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- 3. PROPHETIC DU'A FOR THE SICK               -->
-    <!-- ============================================ -->
-    
+    <!-- Prophetic Du'as -->
     <div class="dua-card">
         <div class="source-badge">📜 HADITH · SAHIH AL-BUKHARI (5742)</div>
         <div class="arabic-text">
@@ -241,7 +206,7 @@
             "I ask Allah, the Mighty, the Lord of the Mighty Throne, to cure you."
         </div>
         <div class="virtue-note">
-            💡 The Prophet (ﷺ) said: "Whoever visits a sick person and says this seven times, Allah will cure him." (Sunan Abi Dawud, Sahih)
+            💡 Recite seven times for the sick. (Sunan Abi Dawud, Sahih)
         </div>
     </div>
 
@@ -254,7 +219,7 @@
             "Remove the harm, O Lord of mankind. Cure, for You are the Healer. There is no cure except Your cure, a cure that leaves no illness behind."
         </div>
         <div class="virtue-note">
-            💡 The Prophet (ﷺ) used to recite this du'a while wiping the area of pain on the sick person. (Sahih al-Bukhari, Sahih Muslim)
+            💡 The Prophet (ﷺ) recited this while wiping the area of pain. (Bukhari, Muslim)
         </div>
     </div>
 
@@ -267,49 +232,23 @@
             "Do not worry. It (the sickness) will be a purification (from sins), if Allah wills."
         </div>
         <div class="virtue-note">
-            💡 Comforting words for the sick. Sickness expiates sins and raises ranks.
+            💡 Sickness expiates sins and raises ranks in Paradise.
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- 4. RUQYAH FOR PROTECTION & HEALING           -->
-    <!-- ============================================ -->
-    
-    <div class="dua-card">
-        <div class="source-badge">📜 RUQYAH · BLOWING ON THE SICK</div>
-        <div class="arabic-text">
-            بِسْمِ اللَّهِ (٣ مَرَّات)<br>
-            أَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ (٧ مَرَّات)
-        </div>
-        <div class="meaning-text">
-            "In the name of Allah (3 times). I seek refuge in Allah and His power from the evil of what I feel and fear (7 times)."
-        </div>
-        <div class="virtue-note">
-            💡 The Prophet (ﷺ) taught this ruqyah. Recite on yourself or on the sick, blow into palms, and wipe over the body.
-        </div>
-    </div>
-
-    <!-- ============================================ -->
-    <!-- 5. DU'A FOR ANXIETY & GRIEF (RELATED TO HEALTH) -->
-    <!-- ============================================ -->
-    
     <div class="dua-card">
         <div class="source-badge">📜 HADITH · SAHIH MUSLIM (2731)</div>
-        <div class="arabic-verse arabic-long">
+        <div class="arabic-text">
             اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْجُبْنِ وَالْبُخْلِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ
         </div>
         <div class="meaning-text">
-            "O Allah, I seek refuge in You from anxiety and grief, from incapacity and laziness, from cowardice and miserliness, from the burden of debt and the oppression of men."
+            "O Allah, I seek refuge in You from anxiety and grief, from incapacity and laziness, from cowardice and miserliness, from debt and the oppression of men."
         </div>
         <div class="virtue-note">
             💡 A comprehensive du'a for mental and emotional health. The Prophet (ﷺ) recited this frequently.
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- 6. DU'A FOR PATIENCE DURING ILLNESS          -->
-    <!-- ============================================ -->
-    
     <div class="dua-card">
         <div class="source-badge">📖 QURAN · SURAH AL-BAQARAH (2:250) & SURAH AL-A'RAF (7:126)</div>
         <div class="arabic-text">
@@ -319,14 +258,10 @@
             "Our Lord, pour upon us patience and let us die as Muslims."
         </div>
         <div class="virtue-note">
-            💡 A powerful du'a for patience (sabr) during illness and hardship, asking Allah to accept us in a state of submission.
+            💡 A powerful du'a for patience during illness and hardship.
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- 7. DU'A FOR VISITING THE SICK                -->
-    <!-- ============================================ -->
-    
     <div class="dua-card">
         <div class="source-badge">📜 HADITH · SUNAN ABI DAWUD (3107)</div>
         <div class="arabic-text">
@@ -336,14 +271,10 @@
             "May Allah remove your affliction, forgive your sins, and grant you well-being in your religion and body."
         </div>
         <div class="virtue-note">
-            💡 Recite this du'a when visiting the sick. Angels say "Ameen" and the sick person's sins are forgiven.
+            💡 Recite when visiting the sick. Angels say "Ameen" and sins are forgiven.
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- 8. DU'A FOR THE BODY'S PROTECTION            -->
-    <!-- ============================================ -->
-    
     <div class="dua-card">
         <div class="source-badge">📜 HADITH · SUNAN ABI DAWUD</div>
         <div class="arabic-text">
@@ -353,31 +284,26 @@
             "O Allah, I ask You for pardon and well-being in this world and the Hereafter."
         </div>
         <div class="virtue-note">
-            💡 The Prophet (ﷺ) said: "There is no du'a more comprehensive than 'Allahumma inni as'aluka al-'afwa wal-'afiyah'." (Authenticated by Albani)
+            💡 The Prophet (ﷺ) said this is the most comprehensive du'a. (Authenticated by Albani)
         </div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- SUMMARY AND HEALING REMINDER                 -->
-    <!-- ============================================ -->
-    
+    <!-- Reminder Section -->
     <div style="background: #1F4A3A; color: white; padding: 1.5rem; border-radius: 16px; text-align: center; margin: 2rem 0;">
         <h3 style="color: #D4A373; margin-top: 0;">🤲 A Healing Reminder</h3>
-        <p>📖 <strong>Read Surah Al-Fatihah</strong> over the sick — the companions did this, and the Prophet (ﷺ) approved.</p>
-        <p>🩺 <strong>Seek medical treatment</strong> — The Prophet (ﷺ) said: "Seek treatment, for Allah has sent a cure for every disease except old age and death."</p>
-        <p>💧 <strong>Honey and black seed (Kalonji)</strong> — The Prophet (ﷺ) said: "In black seed there is healing for every disease except death." (Sahih al-Bukhari)</p>
-        <p>🕋 <strong>For the distant sick:</strong> Make du'a sincerely. The Prophet (ﷺ) said: "The du'a of a Muslim for his brother in his absence is readily answered." (Sahih Muslim)</p>
-        <p style="margin-top: 1rem;">📚 All narrations verified via <strong>Sunnah.com</strong> and Quran.</p>
-        <p style="margin-top: 0.5rem;">🤲 <em>And Allah knows best. May Allah grant your mother shifa' kamilah (complete healing) and comfort your heart. Ameen.</em></p>
+        <p>📖 <strong>Read Surah Al-Fatihah</strong> over the sick.</p>
+        <p>🩺 <strong>Seek medical treatment</strong> — Allah has sent a cure for every disease.</p>
+        <p>💧 <strong>Honey and black seed</strong> contain healing.</p>
+        <p>🕋 <strong>For the distant sick:</strong> Make du'a sincerely — it is answered.</p>
+        <p style="margin-top: 1rem;">🤲 <em>And Allah knows best. May Allah grant complete healing to all the sick. Ameen.</em></p>
     </div>
 
 </main>
 
 <footer class="footer">
-<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #D4A373; text-align: center;"><div id="google_translate_element"></div></div>
-<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #D4A373; text-align: center;"><div id="google_translate_element"></div></div>
-<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #D4A373; text-align: center;"><div id="google_translate_element"></div></div>
-<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #D4A373; text-align: center;"><div id="google_translate_element"></div></div>
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #D4A373; text-align: center;">
+        <div id="google_translate_element"></div>
+    </div>
     <p>🕋 Islamic Hub — Hajj, Umrah & Supplications</p>
     <p>📚 Sources: Quran (Madinah Mushaf), Sahih al-Bukhari, Sahih Muslim, Sunan Abi Dawud</p>
     <p>🤲 <em>And Allah knows best</em> — <a href="../references.html">References</a></p>
@@ -385,15 +311,15 @@
 
 <script src="../js/main.js"></script>
 <script type="text/javascript">
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: "en",
-        includedLanguages: "en,sv,ar,ur,fr,de,es,tr,my,ru",
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, "google_translate_element");
-}
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,sv,ar,ur,fr,de,es,tr,my,ru',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script src="js/flowers.js"></script>
+<script src="../js/flowers.js"></script>
 </body>
 </html>
